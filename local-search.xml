@@ -5,10 +5,10 @@
   
   <entry>
     <title>test_article</title>
-    <link href="/2024/09/21/test-article/"/>
-    <url>/2024/09/21/test-article/</url>
+    <link href="/2024/09/21/test_article/"/>
+    <url>/2024/09/21/test_article/</url>
     
-    <content type="html"><![CDATA[<p>测试文章</p><p><img src="/./test-article/QQ%E6%88%AA%E5%9B%BE20240920144334.png" alt="QQ截图20240920144334"></p>]]></content>
+    <content type="html"><![CDATA[<p>测试文章</p><p><img src="/img/test_article/QQ%E6%88%AA%E5%9B%BE20240920144334.png" alt="imag"></p><p><img src="/./../img/test_article/QQ%E6%88%AA%E5%9B%BE20240920144334.png" alt="QQ截图20240920144334"></p>]]></content>
     
     
     <categories>
