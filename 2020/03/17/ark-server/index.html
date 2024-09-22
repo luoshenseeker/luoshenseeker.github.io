@@ -19,23 +19,23 @@
   <meta name="author" content="luoshenseeker">
   <meta name="keywords" content="">
   
-    <meta name="description" content="@TOC 具体安装时间我本人也不记得了，当时折腾了好久。先是成功安装了18.04，但是初次接触ubuntu，我自认为搞坏了，重装了一次，然后蓝牙出问题，WLAN无法连接，拨号播不了。于是一狠心备份了windows的重要文件，然后安装了纯ubuntu系统，16.04LTS。这其中还有一段故事，我在18LTS上各种配置，vscode，vim，还想弄个Vmware，但是都因为兼容问题有些尬。于是安装纯u">
+    <meta name="description" content="前言由于受朋友的鼓动，加上Steam的80%减价，入手了Ark:Survival Evolved，方舟：生存进化，成功成为Ark废人之一。为了和老铁们一起打游戏，用Ark server manager傻瓜式搭建了ark服务器。又因为没有公网IP，所以用白嫖的服务器搭建了内网穿透，把服务放到了公网上，终于和铁子们快乐地玩上了ark。 可是好景不长，Ark客户端他更新了一个大版本，从之之前的v306更">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告">
-<meta property="og:url" content="http://blog.luoshenseeker.top/2019/03/11/ubuntu-linux-windows/index.html">
+<meta property="og:title" content="方舟服务器 升级失败 服务器数据迁移">
+<meta property="og:url" content="http://blog.luoshenseeker.top/2020/03/17/ark-server/index.html">
 <meta property="og:site_name" content="LsCKr">
-<meta property="og:description" content="@TOC 具体安装时间我本人也不记得了，当时折腾了好久。先是成功安装了18.04，但是初次接触ubuntu，我自认为搞坏了，重装了一次，然后蓝牙出问题，WLAN无法连接，拨号播不了。于是一狠心备份了windows的重要文件，然后安装了纯ubuntu系统，16.04LTS。这其中还有一段故事，我在18LTS上各种配置，vscode，vim，还想弄个Vmware，但是都因为兼容问题有些尬。于是安装纯u">
+<meta property="og:description" content="前言由于受朋友的鼓动，加上Steam的80%减价，入手了Ark:Survival Evolved，方舟：生存进化，成功成为Ark废人之一。为了和老铁们一起打游戏，用Ark server manager傻瓜式搭建了ark服务器。又因为没有公网IP，所以用白嫖的服务器搭建了内网穿透，把服务放到了公网上，终于和铁子们快乐地玩上了ark。 可是好景不长，Ark客户端他更新了一个大版本，从之之前的v306更">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2019-03-11T14:05:02.000Z">
-<meta property="article:modified_time" content="2024-09-22T03:48:44.831Z">
+<meta property="article:published_time" content="2020-03-17T05:53:53.000Z">
+<meta property="article:modified_time" content="2024-09-22T09:16:42.627Z">
 <meta property="article:author" content="luoshenseeker">
-<meta property="article:tag" content="linux">
-<meta property="article:tag" content="windows">
+<meta property="article:tag" content="game">
+<meta property="article:tag" content="transfer">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告 - LsCKr</title>
+  <title>方舟服务器 升级失败 服务器数据迁移 - LsCKr</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告</span>
+            <span id="subtitle">方舟服务器 升级失败 服务器数据迁移</span>
           
         </div>
 
@@ -212,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2019-03-11 22:05" pubdate>
-          2019年3月11日 晚上
+        <time datetime="2020-03-17 13:53" pubdate>
+          2020年3月17日 下午
         </time>
       </span>
     
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          701 字
+          629 字
         
       </span>
     
@@ -272,23 +272,55 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告</h1>
+            <h1 id="seo-header">方舟服务器 升级失败 服务器数据迁移</h1>
             
             
               <div class="markdown-body">
                 
-                <p>@<a href="%E7%9B%AE%E5%BD%95">TOC</a></p>
-<p>具体安装时间我本人也不记得了，当时折腾了好久。先是成功安装了18.04，但是初次接触ubuntu，我自认为搞坏了，重装了一次，然后蓝牙出问题，WLAN无法连接，拨号播不了。于是一狠心备份了windows的重要文件，然后安装了纯ubuntu系统，16.04LTS。这其中还有一段故事，我在18LTS上各种配置，vscode，vim，还想弄个Vmware，但是都因为兼容问题有些尬。于是安装纯ubuntu系统的时候，我选择了16LTS。</p>
-<h2 id="一、安装"><a href="#一、安装" class="headerlink" title="一、安装"></a>一、安装</h2><p>根据我的经验，安装ubuntu系统有3种方式，接下来一一简单说明。</p>
-<h3 id="通过虚拟机安装"><a href="#通过虚拟机安装" class="headerlink" title="通过虚拟机安装"></a>通过虚拟机安装</h3><p>很简单，直接去Ubuntu<a target="_blank" rel="noopener" href="https://www.ubuntu.com/download/desktop">官方网站</a>下载镜像，可以去最新的版本页面下载最新的镜像文件（我这个时候是18LTS），也可以去下载<a target="_blank" rel="noopener" href="https://www.ubuntu.com/download/alternative-downloads">比较旧的版本</a>。</p>
-<p>下载好镜像文件之后，任意使用<strong>Vmware</strong>或者<strong>VirtualBox</strong>安装，这个网上有详细教程我就不一一赘述了。</p>
-<h3 id="通过启动U盘或者光盘安装"><a href="#通过启动U盘或者光盘安装" class="headerlink" title="通过启动U盘或者光盘安装"></a>通过启动U盘或者光盘安装</h3><p>先下载UltraISO（软碟通）工具，将下载好的镜像文件通过UltraISO打开，插入U盘，写入硬盘映像，然后重启电脑，进入BIOS，用UEFI方式启动U盘，然后跟着系统的引导，可以试用，或者安装。</p>
-<h3 id="在windows下的linux子系统"><a href="#在windows下的linux子系统" class="headerlink" title="在windows下的linux子系统"></a>在windows下的linux子系统</h3><p>windows也开始支持linux系统了，在应用商店里搜索想要的linux系统，安装打开就行。但是只有命令行界面。当然有大佬可以通过一些高级操作，完成图形化，有兴趣可以去搜索一下。</p>
-<h2 id="二、安装的注意事项"><a href="#二、安装的注意事项" class="headerlink" title="二、安装的注意事项"></a>二、安装的注意事项</h2><p>一般人由于使用的需要，不会使用纯Ubuntu系统，都会采用双系统的方式安装，比如windows下虚拟机按装，或者windows下的linux子系统，又或者都直接安装到硬盘上。由于前二者较简单，不做赘述，<strong>我要提醒的是</strong>,直接在硬盘上安装双系统的时候，难免会遇到引导问题。如果是先安装windows再安装linux的时候还好说，ubuntu的grub2可以完美解决引导问题。<strong>如果是先安装linux再安装windows系统的话，特别要注意引导问题</strong>。后按装windows的时候，如果不小心（我也还不知道如何避免），会覆盖原来linux系统的引导记录，<strong>然后你的linux系统就找不到了（躺）</strong>（别问我怎么知道的）。</p>
-<p>如果不幸犯了这样的错误，别慌，拿出做好的ubuntu系统安装盘，进入try模式，想办法连上网，打开Terminal，执行以下操作：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt-add-repository ppa:yannubuntu/boot-repair<br><span class="hljs-built_in">sudo</span> apt-get update<br><span class="hljs-built_in">sudo</span> apt-get install boot-repair<br>boot-repair<br></code></pre></td></tr></table></figure>
-
-<p>安装成功之后跟着引导走就可以了。</p>
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于受朋友的鼓动，加上Steam的80%减价，入手了<code>Ark:Survival Evolved</code>，方舟：生存进化，成功成为Ark废人之一。为了和老铁们一起打游戏，用<code>Ark server manager</code>傻瓜式搭建了ark服务器。又因为没有公网IP，所以用白嫖的服务器搭建了内网穿透，把服务放到了公网上，终于和铁子们快乐地玩上了ark。</p>
+<p>可是好景不长，Ark客户端他更新了一个大版本，从之之前的<code>v306</code>更新到了<code>v307</code>，而我服务器上的游戏版本还是<code>v306.81</code>，导致朋友们无法搜到我的服务器了。</p>
+<p>这不行啊，为了可以继续开心玩游戏，我找了好多办法，终于解决了，现在分享给大家，让有这方面需求的人可以少走弯路。</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>一般情况下，直接使用<code>Ark server manager</code><em>（以下称ASM）</em> 自带的更新按钮。但是如果你在输出的进程中发现如下字样(大概是这样，我已经把旧的配置文件删掉了，没法再现，要再现可能得等下一个大版本)</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">[UPDATER] <span class="hljs-built_in">new</span> <span class="hljs-keyword">version</span>: <span class="hljs-keyword">FALSE</span><br></code></pre></td></tr></table></figure>
+<p>那就说明你的自带更新功能有点小问题。我的解决方法是重新开一个服务器，然后把老服务器的数据迁移到新的服务器。</p>
+<p>开新服的办法我就不用说了，网上有别的教程，我过几天可能会把我开服的过程记录一下。</p>
+<h1 id="迁移方法"><a href="#迁移方法" class="headerlink" title="迁移方法"></a>迁移方法</h1><p>&#x3D;&#x3D;<strong>重点来了</strong>&#x3D;&#x3D;：<br>老服务器所有的<strong>玩家信息</strong>和<strong>备份</strong>包括当前的<strong>地图信息</strong>都保存在如下路径中</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gauss">你的服务器安装位置\ShooterGame\<span class="hljs-built_in">Saved</span>\SavedArks<br></code></pre></td></tr></table></figure>
+<p>其中包括</p>
+<table>
+<thead>
+<tr>
+<th>文件名</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>地图名称.ark</td>
+<td>所有玩家创作的结晶</td>
+</tr>
+<tr>
+<td>代号.arkprofile</td>
+<td>UID为代号的玩家数据信息</td>
+</tr>
+<tr>
+<td>代号.png</td>
+<td>UID为代号的玩家图标</td>
+</tr>
+<tr>
+<td>代号.profilebak</td>
+<td>UID为代号的玩家数据信息备份（应该是吧，我从后缀猜的）</td>
+</tr>
+<tr>
+<td>代号.arktribe</td>
+<td>ID为代号的部落信息文件</td>
+</tr>
+<tr>
+<td>***.bak</td>
+<td>直接是某种备份</td>
+</tr>
+</tbody></table>
+<p>只要将这个文件夹里的所有上述文件都移动&#x2F;复制到你新的服务器的相同目录下就完成服务器的信息迁移了。</p>
+<p>注：为了保险起见，也可以把这个文件夹上级目录的<code>Config</code>文件夹也替换掉，这里面是游戏的一些配置，我当时为了保险也换掉了。</p>
 
                 
               </div>
@@ -301,9 +333,9 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/linux/" class="print-no-link">#linux</a>
+        <a href="/tags/game/" class="print-no-link">#game</a>
       
-        <a href="/tags/windows/" class="print-no-link">#windows</a>
+        <a href="/tags/transfer/" class="print-no-link">#transfer</a>
       
     </div>
   
@@ -315,8 +347,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告</div>
-      <div>http://blog.luoshenseeker.top/2019/03/11/ubuntu-linux-windows/</div>
+      <div>方舟服务器 升级失败 服务器数据迁移</div>
+      <div>http://blog.luoshenseeker.top/2020/03/17/ark-server/</div>
     </div>
     <div class="license-meta">
       
@@ -328,7 +360,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2019年3月11日</div>
+          <div>2020年3月17日</div>
         </div>
       
       
@@ -360,15 +392,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/03/17/ark-server/" title="方舟服务器 升级失败 服务器数据迁移">
+                      <a href="/2021/06/10/c-intellisense/" title="vscode intellisense not working vscode 语法检查 工作不正常 [bug记录]">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">方舟服务器 升级失败 服务器数据迁移</span>
+                        <span class="hidden-mobile">vscode intellisense not working vscode 语法检查 工作不正常 [bug记录]</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2019/03/11/ubuntu-linux-windows/" title="Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告">
+                        <span class="hidden-mobile">Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

@@ -4,23 +4,17 @@
   
   
   <entry>
-    <title>test_article</title>
-    <link href="/2024/09/21/test_article/"/>
-    <url>/2024/09/21/test_article/</url>
+    <title>记录一次TombRaider卡死的处理</title>
+    <link href="/2022/01/27/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1TombRaider%E5%8D%A1%E6%AD%BB%E7%9A%84%E5%A4%84%E7%90%86/"/>
+    <url>/2022/01/27/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1TombRaider%E5%8D%A1%E6%AD%BB%E7%9A%84%E5%A4%84%E7%90%86/</url>
     
-    <content type="html"><![CDATA[<p>测试文章</p><p><img src="/img/testarticle/QQ%E6%88%AA%E5%9B%BE20240920144334.png" alt="imag"></p>]]></content>
+    <content type="html"><![CDATA[<p>@<a href="%E7%9B%AE%E5%BD%95">TOC</a></p><h1 id="记录一次TombRaider卡死的处理"><a href="#记录一次TombRaider卡死的处理" class="headerlink" title="记录一次TombRaider卡死的处理"></a>记录一次TombRaider卡死的处理</h1><ul><li>适用场景<br>  该处理方法适用于任何无法鼠标操作但是可以键盘输入的情景</li></ul><h2 id="情景"><a href="#情景" class="headerlink" title="情景"></a>情景</h2><ol><li>古墓丽影卡死，并且窗口置顶，<code>Alt</code>+<code>F4</code>也无法停止，任务管理器无置顶，所以无法用鼠标操作强制关闭TombRaider</li><li>任务栏可以置顶，并且悬停有正常的预览界面</li></ol><h2 id="处理"><a href="#处理" class="headerlink" title="处理"></a>处理</h2><p>使用<code>powershell</code>+进程管理相关命令解决</p><ol><li><p>我的情况可以开始点击<code>terminal</code>（Windows商店的一个终端，很好用），然后开始下一步。更普适的解决方案可能是<code>Win</code>+<code>R</code>调出“运行”，然后输入”powershell”（”cmd”应该也行），运行。</p></li><li><p>命令为</p> <figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs arduino">Get-<span class="hljs-built_in">Process</span> -Name <span class="hljs-string">&quot;Tomb*&quot;</span> | Stop-<span class="hljs-built_in">Process</span><br></code></pre></td></tr></table></figure></li><li><p>命令不需要我解释，不懂含义并感兴趣的请自行谷歌。</p></li></ol><p>问题解决。</p>]]></content>
     
-    
-    <categories>
-      
-      <category>Test</category>
-      
-    </categories>
     
     
     <tags>
       
-      <tag>original</tag>
+      <tag>bug</tag>
       
     </tags>
     
@@ -29,13 +23,42 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2024/09/20/hello-world/"/>
-    <url>/2024/09/20/hello-world/</url>
+    <title>vscode intellisense not working vscode 语法检查 工作不正常 [bug记录]</title>
+    <link href="/2021/06/10/c-intellisense/"/>
+    <url>/2021/06/10/c-intellisense/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>@<a href="%E7%9B%AE%E5%BD%95">TOC</a></p><h1 id="c-c-intellisense-not-working"><a href="#c-c-intellisense-not-working" class="headerlink" title="c&#x2F;c++ intellisense not working"></a>c&#x2F;c++ intellisense not working</h1><h1 id="项目场景："><a href="#项目场景：" class="headerlink" title="项目场景："></a>项目场景：</h1><p>Vscode版本：1.56.2</p><p>我在使用<code>Vscode</code>进行<code>c/c++</code>开发</p><p>我同时在使用<code>Gitlens</code>插件，并在一个<code>Workspace</code>中进行操作</p><h1 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h1><p>此时在<code>vscode</code>中，c&#x2F;c++插件的<code>Intellisense</code>模块工作不正常，无法实时分析你的代码问题并显示到<code>Problems</code>中。</p><h1 id="原因分析："><a href="#原因分析：" class="headerlink" title="原因分析："></a>原因分析：</h1><p>我尝试过很多办法，配置<code>compilerPath</code>,<code>C_Cpp.default.intelliSenseMode</code>,更换各种编译器等等，都无法解决。直到我将目光投向<code>workspace</code>。</p><p>因为太多办法尝试过之后都无果，我甚至怀疑是电脑的问题，准备发Issue，但是我尝试着开了个新folder，随便写了个文件，<code>Intellisense</code>正常了。于是我将目光投向<code>workspace</code>，发现如下问题。</p><figure class="highlight prolog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs prolog"><span class="hljs-string">&quot;folders&quot;</span>: [<br>&#123;<br><span class="hljs-string">&quot;path&quot;</span>: <span class="hljs-string">&quot;../&quot;</span>,<br>&#125;,<br>&#123;<br><span class="hljs-string">&quot;gitlens&quot;</span>*************************<br>&#125;<br>],<br></code></pre></td></tr></table></figure><p>Folder里面<code>gitlens</code>的配置项。我去掉<code>gitlens</code>的配置项之后就没问题了，同时我也测试了增加别的文件夹，发现没问题，只是<code>gitlens</code>的配置项有问题。</p><h1 id="解决方案："><a href="#解决方案：" class="headerlink" title="解决方案："></a>解决方案：</h1><p>修改你的<code>workspace</code>配置文件，删除<code>folders</code>中的<code>gitlens</code>相关配置项。</p><p>具体<code>gitlens</code>配置项长什么样子我忘了，我只有一个项目出过这个问题。当时也没有备份文件。（谁会去备份问题文件啊</p>]]></content>
     
     
+    
+    <tags>
+      
+      <tag>c++</tag>
+      
+      <tag>vscode</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>方舟服务器 升级失败 服务器数据迁移</title>
+    <link href="/2020/03/17/ark-server/"/>
+    <url>/2020/03/17/ark-server/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于受朋友的鼓动，加上Steam的80%减价，入手了<code>Ark:Survival Evolved</code>，方舟：生存进化，成功成为Ark废人之一。为了和老铁们一起打游戏，用<code>Ark server manager</code>傻瓜式搭建了ark服务器。又因为没有公网IP，所以用白嫖的服务器搭建了内网穿透，把服务放到了公网上，终于和铁子们快乐地玩上了ark。</p><p>可是好景不长，Ark客户端他更新了一个大版本，从之之前的<code>v306</code>更新到了<code>v307</code>，而我服务器上的游戏版本还是<code>v306.81</code>，导致朋友们无法搜到我的服务器了。</p><p>这不行啊，为了可以继续开心玩游戏，我找了好多办法，终于解决了，现在分享给大家，让有这方面需求的人可以少走弯路。</p><h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>一般情况下，直接使用<code>Ark server manager</code><em>（以下称ASM）</em> 自带的更新按钮。但是如果你在输出的进程中发现如下字样(大概是这样，我已经把旧的配置文件删掉了，没法再现，要再现可能得等下一个大版本)</p><figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">[UPDATER] <span class="hljs-built_in">new</span> <span class="hljs-keyword">version</span>: <span class="hljs-keyword">FALSE</span><br></code></pre></td></tr></table></figure><p>那就说明你的自带更新功能有点小问题。我的解决方法是重新开一个服务器，然后把老服务器的数据迁移到新的服务器。</p><p>开新服的办法我就不用说了，网上有别的教程，我过几天可能会把我开服的过程记录一下。</p><h1 id="迁移方法"><a href="#迁移方法" class="headerlink" title="迁移方法"></a>迁移方法</h1><p>&#x3D;&#x3D;<strong>重点来了</strong>&#x3D;&#x3D;：<br>老服务器所有的<strong>玩家信息</strong>和<strong>备份</strong>包括当前的<strong>地图信息</strong>都保存在如下路径中</p><figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gauss">你的服务器安装位置\ShooterGame\<span class="hljs-built_in">Saved</span>\SavedArks<br></code></pre></td></tr></table></figure><p>其中包括</p><table><thead><tr><th>文件名</th><th>作用</th></tr></thead><tbody><tr><td>地图名称.ark</td><td>所有玩家创作的结晶</td></tr><tr><td>代号.arkprofile</td><td>UID为代号的玩家数据信息</td></tr><tr><td>代号.png</td><td>UID为代号的玩家图标</td></tr><tr><td>代号.profilebak</td><td>UID为代号的玩家数据信息备份（应该是吧，我从后缀猜的）</td></tr><tr><td>代号.arktribe</td><td>ID为代号的部落信息文件</td></tr><tr><td>***.bak</td><td>直接是某种备份</td></tr></tbody></table><p>只要将这个文件夹里的所有上述文件都移动&#x2F;复制到你新的服务器的相同目录下就完成服务器的信息迁移了。</p><p>注：为了保险起见，也可以把这个文件夹上级目录的<code>Config</code>文件夹也替换掉，这里面是游戏的一些配置，我当时为了保险也换掉了。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>game</tag>
+      
+      <tag>transfer</tag>
+      
+    </tags>
     
   </entry>
   
