@@ -19,23 +19,25 @@
   <meta name="author" content="luoshenseeker">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言由于受朋友的鼓动，加上Steam的80%减价，入手了Ark:Survival Evolved，方舟：生存进化，成功成为Ark废人之一。为了和老铁们一起打游戏，用Ark server manager傻瓜式搭建了ark服务器。又因为没有公网IP，所以用白嫖的服务器搭建了内网穿透，把服务放到了公网上，终于和铁子们快乐地玩上了ark。 可是好景不长，Ark客户端他更新了一个大版本，从之之前的v306更">
+    <meta name="description" content="开始记录EQ学习的笔记了。 前两天读了一篇Midifan的文章，讲了EQ的十种常见的使用误区，翻译自https:&#x2F;&#x2F;www.gearnews.com&#x2F;the-10-most-common-equalizer-mistakes&#x2F;，有些收获，浅浅地记录一下。顺带一提，原文是从使用误区上说的，强调的是“没有做什么”，我觉得“要做什么”的逻辑更为直白，所以将采用“要做什么”的逻辑记录。 1.熟悉不同类型的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="方舟服务器 升级失败 服务器数据迁移">
-<meta property="og:url" content="http://blog.luoshenseeker.top/2020/03/17/ark-server/index.html">
+<meta property="og:title" content="EQ学习笔记-1">
+<meta property="og:url" content="http://blog.luoshenseeker.top/2024/09/23/EQ%E7%9B%B8%E5%85%B31/index.html">
 <meta property="og:site_name" content="LsCKr">
-<meta property="og:description" content="前言由于受朋友的鼓动，加上Steam的80%减价，入手了Ark:Survival Evolved，方舟：生存进化，成功成为Ark废人之一。为了和老铁们一起打游戏，用Ark server manager傻瓜式搭建了ark服务器。又因为没有公网IP，所以用白嫖的服务器搭建了内网穿透，把服务放到了公网上，终于和铁子们快乐地玩上了ark。 可是好景不长，Ark客户端他更新了一个大版本，从之之前的v306更">
+<meta property="og:description" content="开始记录EQ学习的笔记了。 前两天读了一篇Midifan的文章，讲了EQ的十种常见的使用误区，翻译自https:&#x2F;&#x2F;www.gearnews.com&#x2F;the-10-most-common-equalizer-mistakes&#x2F;，有些收获，浅浅地记录一下。顺带一提，原文是从使用误区上说的，强调的是“没有做什么”，我觉得“要做什么”的逻辑更为直白，所以将采用“要做什么”的逻辑记录。 1.熟悉不同类型的">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-17T05:53:53.000Z">
-<meta property="article:modified_time" content="2024-09-22T09:16:42.627Z">
+<meta property="og:image" content="http://blog.luoshenseeker.top/img/EQ%E7%9B%B8%E5%85%B31/6519_1663595471_thumb.jpg">
+<meta property="article:published_time" content="2024-09-23T13:46:51.000Z">
+<meta property="article:modified_time" content="2024-09-24T06:32:58.547Z">
 <meta property="article:author" content="luoshenseeker">
-<meta property="article:tag" content="game">
-<meta property="article:tag" content="transfer">
+<meta property="article:tag" content="mixing">
+<meta property="article:tag" content="EQ">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://blog.luoshenseeker.top/img/EQ%E7%9B%B8%E5%85%B31/6519_1663595471_thumb.jpg">
   
   
   
-  <title>方舟服务器 升级失败 服务器数据迁移 - LsCKr</title>
+  <title>EQ学习笔记-1 - LsCKr</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,7 +216,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">方舟服务器 升级失败 服务器数据迁移</span>
+            <span id="subtitle">EQ学习笔记-1</span>
           
         </div>
 
@@ -225,8 +227,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2020-03-17 13:53" pubdate>
-          2020年3月17日 下午
+        <time datetime="2024-09-23 21:46" pubdate>
+          2024年9月23日 晚上
         </time>
       </span>
     
@@ -237,7 +239,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          629 字
+          2.2k 字
         
       </span>
     
@@ -248,7 +250,7 @@
         
         
         
-          6 分钟
+          19 分钟
         
       </span>
     
@@ -294,55 +296,132 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">方舟服务器 升级失败 服务器数据迁移</h1>
+            <h1 id="seo-header">EQ学习笔记-1</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于受朋友的鼓动，加上Steam的80%减价，入手了<code>Ark:Survival Evolved</code>，方舟：生存进化，成功成为Ark废人之一。为了和老铁们一起打游戏，用<code>Ark server manager</code>傻瓜式搭建了ark服务器。又因为没有公网IP，所以用白嫖的服务器搭建了内网穿透，把服务放到了公网上，终于和铁子们快乐地玩上了ark。</p>
-<p>可是好景不长，Ark客户端他更新了一个大版本，从之之前的<code>v306</code>更新到了<code>v307</code>，而我服务器上的游戏版本还是<code>v306.81</code>，导致朋友们无法搜到我的服务器了。</p>
-<p>这不行啊，为了可以继续开心玩游戏，我找了好多办法，终于解决了，现在分享给大家，让有这方面需求的人可以少走弯路。</p>
-<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><p>一般情况下，直接使用<code>Ark server manager</code><em>（以下称ASM）</em> 自带的更新按钮。但是如果你在输出的进程中发现如下字样(大概是这样，我已经把旧的配置文件删掉了，没法再现，要再现可能得等下一个大版本)</p>
-<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">[UPDATER] <span class="hljs-built_in">new</span> <span class="hljs-keyword">version</span>: <span class="hljs-keyword">FALSE</span><br></code></pre></td></tr></table></figure>
-<p>那就说明你的自带更新功能有点小问题。我的解决方法是重新开一个服务器，然后把老服务器的数据迁移到新的服务器。</p>
-<p>开新服的办法我就不用说了，网上有别的教程，我过几天可能会把我开服的过程记录一下。</p>
-<h1 id="迁移方法"><a href="#迁移方法" class="headerlink" title="迁移方法"></a>迁移方法</h1><p>&#x3D;&#x3D;<strong>重点来了</strong>&#x3D;&#x3D;：<br>老服务器所有的<strong>玩家信息</strong>和<strong>备份</strong>包括当前的<strong>地图信息</strong>都保存在如下路径中</p>
-<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gauss">你的服务器安装位置\ShooterGame\<span class="hljs-built_in">Saved</span>\SavedArks<br></code></pre></td></tr></table></figure>
-<p>其中包括</p>
+                <p>开始记录EQ学习的笔记了。</p>
+<p>前两天读了一篇Midifan的文章，讲了EQ的十种常见的使用误区，翻译自<a target="_blank" rel="noopener" href="https://www.gearnews.com/the-10-most-common-equalizer-mistakes/%EF%BC%8C%E6%9C%89%E4%BA%9B%E6%94%B6%E8%8E%B7%EF%BC%8C%E6%B5%85%E6%B5%85%E5%9C%B0%E8%AE%B0%E5%BD%95%E4%B8%80%E4%B8%8B%E3%80%82%E9%A1%BA%E5%B8%A6%E4%B8%80%E6%8F%90%EF%BC%8C%E5%8E%9F%E6%96%87%E6%98%AF%E4%BB%8E%E4%BD%BF%E7%94%A8%E8%AF%AF%E5%8C%BA%E4%B8%8A%E8%AF%B4%E7%9A%84%EF%BC%8C%E5%BC%BA%E8%B0%83%E7%9A%84%E6%98%AF%E2%80%9C%E6%B2%A1%E6%9C%89%E5%81%9A%E4%BB%80%E4%B9%88%E2%80%9D%EF%BC%8C%E6%88%91%E8%A7%89%E5%BE%97%E2%80%9C%E8%A6%81%E5%81%9A%E4%BB%80%E4%B9%88%E2%80%9D%E7%9A%84%E9%80%BB%E8%BE%91%E6%9B%B4%E4%B8%BA%E7%9B%B4%E7%99%BD%EF%BC%8C%E6%89%80%E4%BB%A5%E5%B0%86%E9%87%87%E7%94%A8%E2%80%9C%E8%A6%81%E5%81%9A%E4%BB%80%E4%B9%88%E2%80%9D%E7%9A%84%E9%80%BB%E8%BE%91%E8%AE%B0%E5%BD%95%E3%80%82">https://www.gearnews.com/the-10-most-common-equalizer-mistakes/，有些收获，浅浅地记录一下。顺带一提，原文是从使用误区上说的，强调的是“没有做什么”，我觉得“要做什么”的逻辑更为直白，所以将采用“要做什么”的逻辑记录。</a></p>
+<h2 id="1-熟悉不同类型的均衡器"><a href="#1-熟悉不同类型的均衡器" class="headerlink" title="1.熟悉不同类型的均衡器"></a>1.熟悉不同类型的均衡器</h2><p>比较基础，但是可以记录一下。</p>
+<p>根据这篇文章，滤波器的种类有以下几个：</p>
+<ul>
+<li>低切滤波器（高通滤波器）。低切滤波器一般用于去除截止频率以下的内容，工作室常见的截止频率大约为80Hz（不包括底鼓贝斯等低频通道）。低频区域可能包含一些低频隆隆声，脚步声等机械噪音，去掉会让声音更干净。</li>
+<li>可调节参数的中频区域EQ（Parametric EQ，可调节参数有Q值、频率、增益&#x2F;衰减，这三个参数决定了钟形曲线的宽度位置以及高度，因为调节的形状是钟形曲线，所以也叫钟形滤波器）</li>
+<li>高频搁架滤波器（high shelf，用于高频提升）。一般用于声音的甜美化（超高频区域的些许增益，这部分也被称为空气声）。</li>
+</ul>
+<h2 id="2-消除录音的谐波震动频率"><a href="#2-消除录音的谐波震动频率" class="headerlink" title="2. 消除录音的谐波震动频率"></a>2. 消除录音的谐波震动频率</h2><p>每个乐器和麦克风都有一定的共振频率，在录音的时候形成<strong>共振峰</strong>。这种共振峰会积蓄大量的能量，掩蔽掉信号的其他部分，进而影响乐器音色。所以，如果用麦克风录音的话，一定先找一找录音里面有没有共振峰，并对其进行衰减。这种衰减过程一般使用Parametric EQ来进行。如果能听出来某个频率有问题最好，不能的话也可以利用窄带宽EQ扫频来寻找<strong>相对更刺耳</strong>的频点。然后削减3-6dB的量就差不多。</p>
+<h2 id="3-不要随意给某个元素的某个频段增益"><a href="#3-不要随意给某个元素的某个频段增益" class="headerlink" title="3. 不要随意给某个元素的某个频段增益"></a>3. 不要随意给某个元素的某个频段增益</h2><p>时刻注意你提升的某个频段是否会掩盖掉其他乐器的重要音色部分。文中提到：</p>
+<blockquote>
+<p>处理混音的第一步应该是实现透明且平衡的混音。得到这个目标最简单的方式通常不是增强你想要听到的声音，而是使用前文中描述的方法减弱你不想听到的声音。</p>
+</blockquote>
+<h2 id="4-要注意到频率间的空隙"><a href="#4-要注意到频率间的空隙" class="headerlink" title="4. 要注意到频率间的空隙"></a>4. 要注意到频率间的空隙</h2><p>我们在真实世界中用耳朵聆听声音的时候，能够准确地分辨来自不同方向、发出不同声音的自然声源。但是现在大部分数字音乐文件都是立体声。要在两个维度里把所有的乐器安排好，让他们都能被清楚听到，是很有挑战性的事情。只有立体声相和深度可以调整。</p>
+<p>尤其是对于底鼓和贝斯这两个乐器来说，挤在立体声里可能很容易出现问题，因为他们声相通常位于中心并且频率相近。假设底鼓的共振频率为80Hz，贝斯音色特征频率在60Hz，那么可能他们都无法被清晰地听到，并且变得浑浊。</p>
+<p>所以需要给他们的频率之间留下间隙。在上述例子中，我们可以试着在60Hz处对贝斯进行削减并在50Hz处给点增益，对80Hz的底鼓进行衰减，增益给到100Hz，这样频率分离得更开，就能更好地共存（原文用的融合，但比起融合，我觉得共存更贴切，而且我很怀疑这个频率的例子，他到底在混哪种音乐）。</p>
+<p>他也给了一个表，常见的频率分布范围，暂且放在这里：</p>
 <table>
 <thead>
 <tr>
-<th>文件名</th>
-<th>作用</th>
+<th><strong>乐器名称</strong></th>
+<th><strong>频率范围</strong></th>
 </tr>
 </thead>
 <tbody><tr>
-<td>地图名称.ark</td>
-<td>所有玩家创作的结晶</td>
+<td>演唱型人声</td>
+<td>80 Hz - 12 kHz</td>
 </tr>
 <tr>
-<td>代号.arkprofile</td>
-<td>UID为代号的玩家数据信息</td>
+<td>说话语音，基础频率（男声）</td>
+<td>120 Hz</td>
 </tr>
 <tr>
-<td>代号.png</td>
-<td>UID为代号的玩家图标</td>
+<td>说话语音，基础频率（女声）</td>
+<td>240 Hz</td>
 </tr>
 <tr>
-<td>代号.profilebak</td>
-<td>UID为代号的玩家数据信息备份（应该是吧，我从后缀猜的）</td>
+<td>辅音</td>
+<td>1.6 - 6 kHz</td>
 </tr>
 <tr>
-<td>代号.arktribe</td>
-<td>ID为代号的部落信息文件</td>
+<td>嘶嘶声</td>
+<td>5 - 8 kHz</td>
 </tr>
 <tr>
-<td>***.bak</td>
-<td>直接是某种备份</td>
+<td>低音鼓 (腔体共振)</td>
+<td>50 - 150 Hz</td>
+</tr>
+<tr>
+<td>低音鼓 (敲击声)</td>
+<td>1 - 4 kHz</td>
+</tr>
+<tr>
+<td>军鼓 (持续音)</td>
+<td>80 - 500 Hz</td>
+</tr>
+<tr>
+<td>军鼓 (线圈)</td>
+<td>谐波高至 12 kHz</td>
+</tr>
+<tr>
+<td>踩镲 Hi-hat</td>
+<td>高至 15 kHz</td>
+</tr>
+<tr>
+<td>筒鼓 Toms (持续音)</td>
+<td>70 - 120 Hz</td>
+</tr>
+<tr>
+<td>筒鼓 Toms (触发音)</td>
+<td>高至 7 kHz</td>
+</tr>
+<tr>
+<td>钹 Cymbals</td>
+<td>高至 20 kHz</td>
+</tr>
+<tr>
+<td>原声吉他 (基础频率)</td>
+<td>82 - 1174 Hz</td>
+</tr>
+<tr>
+<td>原声吉他 (谐波频率)</td>
+<td>高至 12 kHz</td>
+</tr>
+<tr>
+<td>电吉他，音箱拾音 (基础频率)</td>
+<td>82 - 1174 Hz</td>
+</tr>
+<tr>
+<td>电吉他，音箱拾音 (谐波频率)</td>
+<td>高至 7 kHz</td>
+</tr>
+<tr>
+<td>电贝斯（四弦，基础频率）</td>
+<td>41 - 343 Hz</td>
+</tr>
+<tr>
+<td>电贝斯（四弦，谐波频率）</td>
+<td>高至 5 kHz</td>
 </tr>
 </tbody></table>
-<p>只要将这个文件夹里的所有上述文件都移动&#x2F;复制到你新的服务器的相同目录下就完成服务器的信息迁移了。</p>
-<p>注：为了保险起见，也可以把这个文件夹上级目录的<code>Config</code>文件夹也替换掉，这里面是游戏的一些配置，我当时为了保险也换掉了。</p>
+<h2 id="5-不要过度处理"><a href="#5-不要过度处理" class="headerlink" title="5. 不要过度处理"></a>5. 不要过度处理</h2><p>“当你过多地使用EQ的时候，声音不一定会变得更好”。EQ最初发明的时候是要成为一种矫正工具的，主要用于处理在录音过程中造成的失真。而不是一种声音调整的工具。</p>
+<p>不过，如果将EQ作为效果器使用，那么本条就无关紧要了。</p>
+<h2 id="6-过度提升高频"><a href="#6-过度提升高频" class="headerlink" title="6. 过度提升高频"></a>6. 过度提升高频</h2><blockquote>
+<p>人声应该在混音中处于最重要的位置，吉他段落应该融入混音中，军鼓需要听起来有冲击力。想要得到这些结果非常的简单 —— 只需要把所有的高频都调大即可，不幸的是，这可能正是造成灾难的源头。</p>
+<p>提高人声轨道中的高频意味着提高嘶嘶声中的 “嘶” 音。如果对这些内容的高频进行过度地提升，这个声音会变得非常烦人，需要使用 de-esser 来对其进行修复。同样地，如果高频提升过多，钹和镲片会听起来非常的刺耳，会使你的混音失去平衡。这就是为什么应该控制自己想要在所有的轨道中提升高频的想法。</p>
+</blockquote>
+<h2 id="7-不要提升原始音频中不存在的频率（一般都不会吧）"><a href="#7-不要提升原始音频中不存在的频率（一般都不会吧）" class="headerlink" title="7. 不要提升原始音频中不存在的频率（一般都不会吧）"></a>7. 不要提升原始音频中不存在的频率（一般都不会吧）</h2><blockquote>
+<p>如果你尝试提升低音鼓 12 kHz 位置的频率，很可能不会得到任何变化 —— 当然也不会影响低音鼓的音色。那是因为这个乐器在这个频率范围内并不包含任何有用的音色信息。EQ 均衡器仅应该用来提升源信号中已经存在的频率。提升其它频率（如低音鼓中的高频）只会让其产生更多的噪音和失真，因为你所做的只是增加信号的底噪，无法对原始音色进行调整，同时还浪费了一个可以用于其它用途的 EQ 频段。</p>
+</blockquote>
+<h2 id="8-不要在录音过程中过度使用EQ"><a href="#8-不要在录音过程中过度使用EQ" class="headerlink" title="8. 不要在录音过程中过度使用EQ"></a>8. 不要在录音过程中过度使用EQ</h2><p>很简单，保留原始材料，你后面想怎么修怎么修，先修过了，再想换方法就不可能了。</p>
+<h2 id="9-正确地使用图形EQ均衡器"><a href="#9-正确地使用图形EQ均衡器" class="headerlink" title="9. 正确地使用图形EQ均衡器"></a>9. 正确地使用图形EQ均衡器</h2><p>他说的图形EQ是这种：</p>
+<p><img src="/img/EQ%E7%9B%B8%E5%85%B31/6519_1663595471_thumb.jpg" srcset="/img/loading.gif" lazyload alt="图形EQ均衡器1"></p>
+<p>很像播放器给你提供的那种EQ，只能调整固定频点上的增益。</p>
+<blockquote>
+<p>与参数 EQ 均衡器相反，图形均衡器 主要用于现场声音应用场景中的 房间补偿 和 反馈回授抑制。不太适合在工作室场景中对单一信号进行处理。</p>
+<p>图形 EQ 之所以被称之为 “图形（graphic）”，因为它们对整体 EQ 曲线提供了便捷的可视化显示。典型的 1&#x2F;3 倍八度音阶的均衡器提供了 31 个可调整的 EQ 频段，每个频段都配备了独立的衰减&#x2F;提升滑块。与参数均衡器相比，你无法将频段选择到特定的频率上。一种常见的解决方法是对想要调整的频率点周围的频段进行调整，在所需调整的频率周围形成一条小曲线。<br>图形均衡器还有另外一个主要的缺点：一旦将其插入至信号流中，信号总是会通过 31 个滤波器阵列进行处理，因为独立的频段无法单独停用。因此，每个频段都有可能会增加一点噪声、失真和相位偏移，这些结果都会累加并最终反应在整体的信号中。</p>
+<p>现场音频工程师依靠图形均衡器来调整 PA 系统以适应现场环境特点，或用来防止监听扬声器的反馈及回授。由于前文中所描述的缺点，它们不太适合用来做录音和混音工作。</p>
+</blockquote>
+<h2 id="10-不要过度依赖EQ曲线的视觉显示"><a href="#10-不要过度依赖EQ曲线的视觉显示" class="headerlink" title="10. 不要过度依赖EQ曲线的视觉显示"></a>10. 不要过度依赖EQ曲线的视觉显示</h2><p>多用耳朵去听，聆听才是最重要的。</p>
 
                 
               </div>
@@ -351,13 +430,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/mixing/" class="category-chain-item">mixing</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/game/" class="print-no-link">#game</a>
+        <a href="/tags/mixing/" class="print-no-link">#mixing</a>
       
-        <a href="/tags/transfer/" class="print-no-link">#transfer</a>
+        <a href="/tags/EQ/" class="print-no-link">#EQ</a>
       
     </div>
   
@@ -369,8 +469,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>方舟服务器 升级失败 服务器数据迁移</div>
-      <div>http://blog.luoshenseeker.top/2020/03/17/ark-server/</div>
+      <div>EQ学习笔记-1</div>
+      <div>http://blog.luoshenseeker.top/2024/09/23/EQ相关1/</div>
     </div>
     <div class="license-meta">
       
@@ -382,7 +482,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2020年3月17日</div>
+          <div>2024年9月23日</div>
         </div>
       
       
@@ -414,18 +514,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2021/06/10/c-intellisense/" title="vscode intellisense not working vscode 语法检查 工作不正常 [bug记录]">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">vscode intellisense not working vscode 语法检查 工作不正常 [bug记录]</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2019/03/11/ubuntu-linux-windows/" title="Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告">
-                        <span class="hidden-mobile">Ubuntu安装记录及先安装linux(ubuntu)后安装windows的忠告</span>
+                      <a href="/2022/01/27/%E8%AE%B0%E5%BD%95%E4%B8%80%E6%AC%A1TombRaider%E5%8D%A1%E6%AD%BB%E7%9A%84%E5%A4%84%E7%90%86/" title="记录一次TombRaider卡死的处理">
+                        <span class="hidden-mobile">记录一次TombRaider卡死的处理</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
